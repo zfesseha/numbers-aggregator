@@ -1,0 +1,51 @@
+.numbers-container {
+    display: table;
+    margin: 0 auto;
+    padding-top: 5%;
+    width: 70%;
+}
+
+.btn.btn-primary {
+    margin-left: 1%;
+}
+
+.form-inline .form-group label {
+    padding-right: 1%;
+}
+
+/*.number-input.form-group {*/
+    /*float: left;*/
+/*}*/
+
+.running-total-label {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.alert.alert-info {
+    width: 50%;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+form.form-inline {
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+ul.list-group {
+    width: 50%;
+}
+
+.history-container {
+    width: 50%;
+    margin: auto;
+}
+
+.history-container .list-group .list-group-item {
+    padding: 0.2rem 0.5rem;
+}

@@ -1,0 +1,30 @@
+<div class="numbers-container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Numbers Aggregator</h1>
+        </div>
+    </div>
+    <h4 class="running-total-label">Running Total</h4>
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">{{sum}}</h4>
+    </div>
+    <hr/>
+    <div class="history-container">
+        <form class="form-inline" (submit)="addNumber(newNumber)">
+            <div class="form-group">
+                <label class="sr-only" for="newNumber"></label>
+                <input placeholder="Type a number to add" id="newNumber" name="newNumber" type="text" class="form-control" [(ngModel)]="newNumber" [ngbTypeahead]="search"/>
+            </div>
+            <button class="btn btn-primary" type="submit">Enter</button>
+        </form>
+        <div *ngIf="!isNumbersEmpty()">
+            <button type="button" class="btn btn-link" (click)="clearNumbers()">Clear history</button>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let number of numbers">
+                    {{number}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
